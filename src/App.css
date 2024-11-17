@@ -1,0 +1,176 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  padding: 2em 1em;
+
+}
+
+.badge {
+  padding: .5em 1em;
+  background-color: white;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.pill {
+  border-radius: 18px;
+}
+
+.square {
+  border-radius: 6px;
+}
+
+.banner {
+  background-color: white;
+  color: black;
+  padding: 1.5em 2em;
+  border-radius: .5em;
+  display: flex;
+  max-width: 46em;
+}
+
+.icon-box {
+  margin-right: .5em;
+  font-size: 1.2em;
+}
+
+.banner p{
+  margin-top: .75em;
+}
+.card{
+    max-width: 460px;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 1.5em;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .75em;
+    font-size: 1.2em;
+    transition: all .3s linear;
+    box-shadow: 2px 2px 16px #7a7a7a;
+  }
+  .card .icon {
+    background-color: orangered;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border-radius: 8px;
+    position: relative;
+    top: -2em;
+  }
+  .card h3 {
+    /* color: black; */
+    margin: -1.5em 0 1em;
+  }
+  .testimonial {
+    color: white;
+    display:  flex;
+    align-items: center;
+    gap: 2em;
+    padding: 1em 2em;
+    height: 250px;
+    max-width: 770px;
+    position: relative;
+    box-shadow: 2px 2px 16px #7a7a7a;
+
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+      width: 300px;
+      padding: 1em;
+      
+      & .profile-box {
+        height: 150px;
+        width: 100%;
+        z-index: 1;
+  
+        & img {
+          object-fit: cover;
+        }
+      }
+  
+      .white-box {
+        height: 80px;
+        width: 100%;
+        right: 0;
+        top: 0;
+        background-color: #fdfdfd;
+        /* background-color: red; */
+        position: absolute;
+      }
+    }
+  }
+  
+  .profile-box {
+    width: 240px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+  
+  .profile-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .5em;
+  }
+  
+  .qoute-icon {
+    width: 48px;
+    display: inline-block;
+    color: #84848481;
+    font-size: 3em;
+  }
+  
+  .qoute-icon img {
+    width: 100%;
+  }
+  
+  .testimonial {
+    margin: 2em 0;
+  }
+  
+  .testimonial .text {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+  
+  .testimonial .name,
+  .testimonial .job {
+    font-size: .8em;
+    line-height: 1.5em;
+  }
+  
+  .testimonial .name {
+    font-weight: 600;
+    margin-top: 1.25em;
+  }
+  
+  .testimonial .job {
+    font-weight: 300;
+  }
+  
+  .flex-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
